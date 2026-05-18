@@ -1,41 +1,41 @@
 :root {
-    --brand-primary: #0ea5e9;
-    --brand-dark: #0284c7;
-    --brand-light: #e0f2fe;
+    --brand-primary: hsl(199, 89%, 48%);
+    --brand-dark: hsl(200, 98%, 39%);
+    --brand-light: hsl(204, 94%, 94%);
 
-    --tutorial-color: #0ea5e9;
-    --reference-color: #10b981;
-    --general-color: #8b5cf6;
+    --1-color: hsl(199, 89%, 48%);
+    --2-color: hsl(160, 84%, 39%);
+    --3-color: hsl(258, 90%, 66%);
 
-    --bg-page: #f8fafc;
-    --bg-surface: #ffffff;
-    --bg-sidebar: #f1f5f9;
-    --bg-code: #1e293b;
-    --bg-output: #0f172a;
-    --bg-inline: #e2e8f0;
-    --bg-tip: #ecfdf5;
-    --bg-note: #eff6ff;
-    --bg-warn: #fffbeb;
-    --bg-danger: #fff1f2;
+    --bg-page: hsl(210, 40%, 98%);
+    --bg-surface: hsl(0, 0%, 100%);
+    --bg-sidebar: hsl(210, 40%, 96%);
+    --bg-code: hsl(217, 33%, 17%);
+    --bg-output: hsl(222, 47%, 11%);
+    --bg-inline: hsl(214, 32%, 91%);
+    --bg-tip: hsl(152, 81%, 96%);
+    --bg-note: hsl(214, 100%, 97%);
+    --bg-warn: hsl(48, 100%, 96%);
+    --bg-danger: hsl(356, 100%, 97%);
 
-    --text-primary: #0f172a;
-    --text-secondary: #475569;
-    --text-muted: #94a3b8;
-    --text-code: #e2e8f0;
-    --text-inline: #be185d;
-    --text-link: #0ea5e9;
-    --border: #e2e8f0;
-    --border-accent: #0ea5e9;
+    --text-primary: hsl(222, 47%, 11%);
+    --text-secondary: hsl(215, 19%, 35%);
+    --text-muted: hsl(215, 20%, 65%);
+    --text-code: hsl(214, 32%, 91%);
+    --text-inline: hsl(335, 78%, 42%);
+    --text-link: hsl(199, 89%, 48%);
+    --border: hsl(214, 32%, 91%);
+    --border-accent: hsl(199, 89%, 48%);
 
-    --syn-keyword: #f472b6;
-    --syn-string: #86efac;
-    --syn-number: #fbbf24;
-    --syn-comment: #64748b;
-    --syn-function: #60a5fa;
-    --syn-variable: #c084fc;
-    --syn-operator: #fb923c;
-    --syn-builtin: #34d399;
-    --syn-type: #67e8f9;
+    --syn-keyword: hsl(329, 86%, 70%);
+    --syn-string: hsl(142, 77%, 73%);
+    --syn-number: hsl(43, 96%, 56%);
+    --syn-comment: hsl(215, 16%, 47%);
+    --syn-function: hsl(213, 94%, 68%);
+    --syn-variable: hsl(270, 95%, 75%);
+    --syn-operator: hsl(27, 96%, 61%);
+    --syn-builtin: hsl(158, 64%, 52%);
+    --syn-type: hsl(187, 92%, 69%);
 
     --sidebar-w: 260px;
     --header-h: 58px;
@@ -49,16 +49,16 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg-page: #0f172a;
-        --bg-surface: #1e293b;
-        --bg-sidebar: #0f172a;
-        --bg-code: #0d1b2e;
-        --bg-output: #060d18;
-        --bg-inline: #1e293b;
-        --bg-tip: #052e16;
-        --bg-note: #0c1a2e;
-        --bg-warn: #2d1900;
-        --bg-danger: #2d0a0a;
+        --bg-page: hsl(222, 47%, 11%);
+        --bg-surface: hsl(217, 33%, 17%);
+        --bg-sidebar: hsl(222, 47%, 11%);
+        --bg-code: hsl(215, 56%, 12%);
+        --bg-output: hsl(217, 60%, 6%);
+        --bg-inline: hsl(217, 33%, 17%);
+        --bg-tip: hsl(145, 80%, 10%);
+        --bg-note: hsl(215, 59%, 11%);
+        --bg-warn: hsl(33, 100%, 9%);
+        --bg-danger: hsl(0, 64%, 11%);
 
         --text-primary: #f1f5f9;
         --text-secondary: #94a3b8;
@@ -264,19 +264,19 @@ body {
 .sidebar[data-section="tutorial"] a.active {
     color: var(--tutorial-color);
     border-left-color: var(--tutorial-color);
-    background: rgba(14, 165, 233, .1);
+    background: hsla(199, 89%, 48%, 0.1);
 }
 
 .sidebar[data-section="reference"] a.active {
     color: var(--reference-color);
     border-left-color: var(--reference-color);
-    background: rgba(16, 185, 129, .1);
+    background: hsla(160, 84%, 39%, 0.1);
 }
 
 .sidebar[data-section="general"] a.active {
     color: var(--general-color);
     border-left-color: var(--general-color);
-    background: rgba(139, 92, 246, .1);
+    background: hsla(258, 90%, 66%, 0.1);
 }
 
 
@@ -422,14 +422,14 @@ code {
 }
 
 .code-label {
-    background: #0f1929;
-    color: #64748b;
+    background: hsl(217, 46%, 11%);
+    color: hsl(215, 16%, 47%);
     font-size: 0.72rem;
     font-weight: 600;
     letter-spacing: .07em;
     text-transform: uppercase;
     padding: 0.4rem 1rem;
-    border-bottom: 1px solid #1e3050;
+    border-bottom: 1px solid hsl(218, 45%, 22%);
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -443,15 +443,15 @@ code {
 }
 
 .dot-red {
-    background: #ff5f57;
+    background: hsl(3, 100%, 67%);
 }
 
 .dot-yellow {
-    background: #febc2e;
+    background: hsl(41, 99%, 59%);
 }
 
 .dot-green {
-    background: #28c840;
+    background: hsl(129, 67%, 47%);
 }
 
 .code-block pre {
@@ -474,14 +474,14 @@ code {
 }
 
 
-.output-block {
+.code-block {
     margin: -0.5rem 0 1.25rem;
     border-radius: 0 0 var(--radius) var(--radius);
     overflow: hidden;
 }
 
-.output-label {
-    background: #050d18;
+.code-label {
+    background: hsl(215, 66%, 6%);
     color: #334155;
     font-size: 0.72rem;
     font-weight: 600;
@@ -490,9 +490,9 @@ code {
     padding: 0.3rem 1rem;
 }
 
-.output-block pre {
+.code-block pre {
     background: var(--bg-output);
-    color: #94a3b8;
+    color: hsl(215, 20%, 65%);
     padding: 0.85rem 1.25rem;
     margin: 0;
     font-size: 0.875rem;
@@ -509,7 +509,7 @@ code {
     margin: 1rem 0;
     font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
     font-size: 0.9rem;
-    color: #c4d4e8;
+    color: hsl(213, 44%, 84%);
     overflow-x: auto;
 }
 
