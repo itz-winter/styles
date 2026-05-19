@@ -3,64 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title id="css-name">EXAMPLE</title>
-  <link rel="icon" type="image/x-icon" href="./icon.ico">
-  <link rel="stylesheet" href="site.css">
+  <title>Example Page: green-1.css</title>
+  <link rel="stylesheet" href="..green/green-1.css">
 </head>
 <body>
-  <header class="site-header">
-    <a class="site-logo" href="./icon.ico">
-      <span class="text">Example</span>
-    </a>
-    <nav class="site-nav">
-      <a href="#" data-section="1">Nav 1</a>
-      <a href="#" data-section="2">Nav 2</a>
-      <a href="#" data-section="3">Nav 3</a>
-    </nav>
-    <div class="site-header-spacer"></div>
-  </header>
-
-  <div style="margin-top: var(--header-h);">
-    <section class="hero">
-      <span class="text-big"></span>
+<header class="site-header">
+  <button class="sidebar-toggle" aria-label="Toggle sidebar">&#9776;</button>
+  <a class="site-logo" href="/">Example Site</a>
+</header>
+<div class="site-body">
+  <aside class="sidebar"></aside>
+  <div class="sidebar-backdrop"></div>
+  <main class="content" style="padding-top:0;padding-left:0;padding-right:0;">
+    <div class="hero">
+      <span class="hero-icon"></span>
+      <img src="icon.ico" alt="Avatar" style="border-radius: 50%; outline: 5px solid var(--brand-primary); transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'" onclick="this.style.transform='rotate(5deg)'" width="168" height="168">
       <h1>Example Page</h1>
-      <p>Pellentesque sollicitudin ipsum non quam congue, sed interdum leo sollicitudin.</p>
-    </section>
-    <div class="section-cards">
-      <a class="section-card 1" href="#">
-        <span class="card-icon"></span>
-        <div class="card-title">Card 1</div>
-        <p class="card-desc">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-          Phasellus maximus viverra orci ut dignissim. Nullam luctus, 
-          purus at tristique pharetra, mauris nisi varius diam, quis 
-          faucibus tellus nibh non erat.
-        </p>
-        <span class="card-tag 1">Card 1</span>
-      </a>
-      <a class="section-card 2" href="#">
-        <span class="card-icon"></span>
-        <div class="card-title">Card 2</div>
-        <p class="card-desc">
-          Duis aute irure dolor in reprehenderit in voluptate velit 
-          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-          occaecat cupidatat non proident, sunt in culpa qui officia 
-          deserunt mollit anim id est laborum.
-        </p>
-        <span class="card-tag 2">Card 2</span>
-      </a>
-      <a class="section-card 3" href="#">
-        <span class="card-icon"></span>
-        <div class="card-title">Card 3</div>
-        <p class="card-desc">
-            Sed erat augue, maximus eu lacus ac, aliquam.
-        </p>
-        <span class="card-tag 3">Card 3</span>
-      </a>
+      <p>An example page showing off the style green-1.css!</p>
+      <div class="hero-badge">v1.11.2 &bull; Epic Badge &bull; CSS/HTML</div><br>
+      <a class="btn-invite" href="https://discord.gg/dcmsbXU5Yf" target="_blank" rel="noopener">Join Support Server</a>
     </div>
-  </div>
-  <footer>
-    Example Documentation &mdash; built with love and care.
-  </footer>
+    <div class="section-cards">
+      <a href="#" class="section-card"><span class="card-icon">1</span><div class="card-title">Features</div><p class="card-desc">In-depth look at every feature!</p></a>
+      <a href="#" class="section-card"><span class="card-icon">2</span><div class="card-title">Guide</div><p class="card-desc">Use this theme!</p></a>
+      <a href="https://www.kelpw.ing/" class="section-card"><span class="card-icon">3</span><div class="card-title">Profile</div><p class="card-desc">Check out my profile to find my other socials!</p></a>
+      <a href="https://projects.kelpw.ing/" class="section-card"><span class="card-icon">4</span><div class="card-title">Projects</div><p class="card-desc">Check out the various projects I've made or are working on!</p></a>
+      <a href="https://discord.gg/dcmsbXU5Yf" class="section-card"><span class="card-icon">5</span><div class="card-title">Support &amp; FAQ</div><p class="card-desc">Frequently asked questions, troubleshooting, and how to get help.</p></a>
+    </div>
+    <div class="feature-strip">
+      <div class="feature-strip-inner">
+        <div class="feature-strip-item"><div class="fi-icon">1</div><strong>Sidebar &amp; Toolbar</strong><span>For easy navigation.</span></div>
+        <div class="feature-strip-item"><div class="fi-icon">2</div><strong>Button Styles</strong><span>Various button styles to choose from.</span></div>
+        <div class="feature-strip-item"><div class="fi-icon">3</div><strong>Feature Strips</strong><span>Show off what your site/project has.</span></div>
+        <div class="feature-strip-item"><div class="fi-icon">4</div><strong>Customisable</strong><span>Customise to your own liking.</span></div>
+        <div class="feature-strip-item"><div class="fi-icon">5</div><strong>Spacious</strong><span>Lots of comfortable margins for better reading. Customisable.</span></div>
+        <div class="feature-strip-item"><div class="fi-icon">6</div><strong>Soothing</strong><span>...only when used properly...</span></div>
+      </div>
+    </div>
+    <footer class="site-footer">
+      &copy; 2026 kelpwing &bull; <a href="https://www.kelpw.ing/">Profile</a> &bull; <a href="https://projects.kelpw.ing/">Projects</a> &bull; <a href="https://discord.gg/dcmsbXU5Yf">Discord</a>
+    </footer>
+  </main>
+</div>
 </body>
 </html>
