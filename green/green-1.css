@@ -381,7 +381,7 @@ code {
   }
 }
 
-.doc-section {
+.body-section {
   background: var(--bg-surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
@@ -391,23 +391,23 @@ code {
   animation: fadeIn .35s ease;
 }
 
-.doc-section h2 {
+.body-section h2 {
   margin-top: 0;
   border-bottom: none;
   padding-bottom: 0;
 }
 
-.doc-section h3 {
+.body-section h3 {
   color: var(--text-primary);
 }
 
-.doc-section p,
-.doc-section li {
+.body-section p,
+.body-section li {
   color: var(--text-secondary);
 }
 
-.doc-section ul,
-.doc-section ol {
+.body-section ul,
+.body-section ol {
   padding-left: 1.25rem;
 }
 
